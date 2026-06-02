@@ -8,13 +8,4 @@ qrcode[pil]
 google-genai
 matplotlib
 seaborn
-# This file ensures all AI and UI libraries are installed locally.
 
-from google.colab import files
-import os
-
-if os.path.exists('requirements.txt'):
-    print('🚀 Preparing your requirements.txt for download...')
-    files.download('requirements.txt')
-else:
-    print('❌ Error: requirements.txt not found. Please ensure the generation cell above has been run.')
